@@ -15,7 +15,6 @@ public class AppLinksMacosPlugin: NSObject, FlutterPlugin, FlutterStreamHandler,
     let eventChannel = FlutterEventChannel(name: "com.llfbandit.app_links/events", binaryMessenger: registrar.messenger)
     eventChannel.setStreamHandler(instance)
     
-    registrar.addApplicationDelegate(instance)
   }
   
   public func handleWillFinishLaunching(_ notification: Notification) {
